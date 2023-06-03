@@ -1,7 +1,8 @@
 package com.wil.helpdesk_1.domain.enums;
 
 public enum Prioridade {
-	ABERTO(0, "ABERTO"), ANDAMENTO(1, "ANDAMENTO"), ENCERRADO(2, "ENCERRADO");
+	BAIXA(0, "BAIXA"), MEDIA(1, "MEDIA"), ALTA(2, "ALTA");
+	
 	
 	private Integer codigo;
 	private String descricao;
