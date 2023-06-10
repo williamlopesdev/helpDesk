@@ -3,7 +3,6 @@ package com.wil.helpdesk_1.domain;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -15,6 +14,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import org.hibernate.validator.constraints.br.CPF;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.wil.helpdesk_1.domain.enums.Perfil;
@@ -28,6 +29,7 @@ public abstract class Pessoa implements Serializable {
 	protected Integer id;
 	protected String nome;
 	
+	@CPF
 	@Column(unique = true)
 	protected String cpf;
 	

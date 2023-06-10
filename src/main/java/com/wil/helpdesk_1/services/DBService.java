@@ -27,10 +27,10 @@ public class DBService {
 	
 	
 	public void instaciaDB() {
-		Tecnico tec1 = new Tecnico(null, "Valdir Cesar", "00100200304", "valdir@email.com", "123");
+		Tecnico tec1 = new Tecnico(null, "Valdir Cesar", "555.651.310-49", "valdir@email.com", "123");
 		tec1.addPerfil(Perfil.ADMIN);
 		
-		Cliente cli1 = new Cliente(null, "Linus Torvalds", "00200300405", "linus@email.com", "321");
+		Cliente cli1 = new Cliente(null, "Linus Torvalds", "183.255.940-80", "linus@email.com", "321");
 		cli1.addPerfil(Perfil.CLIENTE);
 		
 		Chamado c1 = new Chamado(null, Prioridade.MEDIA, Status.ANDAMENTO, "Chamado 01", "Primeiro chamado", tec1, cli1);
